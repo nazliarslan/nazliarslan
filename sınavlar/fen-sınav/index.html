@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SINAV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <!--    başlangıç     -->
+        <div id="start">SINAVA BAŞLA</div>
+
+        <!--    hakkında     -->
+        <div id="guide">
+            <h2>Sınav Hakkında</h2>
+            <h4>1. Toplamda 10 soru vardır.</h4>
+            <h4>2. Her soru için sadece 20 saniye süreniz vardır.</h4>
+            <h4>3. Doğru cevaplarınız üzerinden puan alacaksınız.</h4>
+            <h4>4. İstediğiniz soruyu boş bırakabilirsiniz.</h4>
+            <div id="button">
+                <button id="exit">ÇIKIŞ</button>
+                <button id="continue">DEVAM</button>
+            </div>
+        </div>
+
+        <!--    sınav    -->
+        <div id="exam">
+            <div id="exam_header">
+                <h5>FEN BİLİMLERİ</h5>
+                <div id="timer">
+                    <h6>SÜRE</h6>
+                    <h6 id="time">00</h6>
+                </div>
+            </div>
+
+            <!--     soru  -->
+
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+
+            <!--       seçenek   -->
+
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+            <!--  cevap -->
+
+            <div id="answersSection">
+                <h3 id="back_question">Geri Dön</h3>
+                <h3 id="next_question">Devam Et</h3>
+                <h3 id="total_correct">Doğru Sayınız: </h3>
+                <h3 id="finish">Bitir</h3>
+            </div>
+        </div>
+        <!--   sonuç  -->
+        <div id="result">    
+            <h6>Tebrikler!!!</h6> 
+            <h6>Testi Tamamladınız</h6>
+            <h6 id="points"> Doğru sayınız : 0 </h6>
+            <h6 id="total_score"> Puanınız : 0 </h6>
+            <button id="quit">Çıkış</button>
+        </div>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
